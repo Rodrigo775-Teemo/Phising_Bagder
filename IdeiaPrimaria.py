@@ -35,5 +35,11 @@ else:
     print("🔴💀 Status: CUIDADO EXTREMO: Mensagem duvidosa!, em caso de duvida entrar em contato com algum familiar de sua confiança")
     print("\nRecomendação:")
     print("Não clique em links, não forneça senhas nem códigos e não faça transferências.")
+if len(indicadores_encontrados) > 0:
+    print("\nIndicadores encontrados:")
+    for indicador in indicadores_encontrados:
+        print(f"- {indicador}")
+else:
+    print("\nNenhum indicador de risco encontrado.")
    
     
